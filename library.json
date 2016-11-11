@@ -1,0 +1,12 @@
+{
+  "name": "TSL235R",
+  "keywords": "tsl235r",
+  "description": "Library for using TSL235R light to frequency sensor",
+  "version": "1.0",
+  "authors": {
+    "name": "Geoff Berl",
+    "url": "http://www.robotresearchlab.com"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}

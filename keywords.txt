@@ -1,0 +1,8 @@
+
+TSL235R KEYWORD1
+
+
+handleInterrupt KEYWORD2
+read    KEYWORD2
+readCalibrated  KEYWORD2
+calibrateOnce   KEYWORD2
