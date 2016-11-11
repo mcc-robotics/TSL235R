@@ -21,7 +21,7 @@ public:
 
     /**
      * read
-     * Takes an instant reading the light intensity. In actuality it takes
+     * Takes an instant reading the light intensity. In actuality may take
      * multiple readings and averages them to avoid spurios noise effects.
      * @return int the frequency (Hz) of the sensor signal
      */
