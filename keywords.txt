@@ -1,8 +1,22 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
 
 TSL235R KEYWORD1
 
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
 
 handleInterrupt KEYWORD2
 read    KEYWORD2
 readCalibrated  KEYWORD2
 calibrateOnce   KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+INTERRUPT_MODE	LITERAL1
+PULSE_MODE	LITERAL1
+

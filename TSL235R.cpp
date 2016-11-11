@@ -3,8 +3,8 @@
 #include "TSL235R.h"
 
 TSL235R::TSL235R(unsigned char dataPin) {
-    // Set the default mode to use interrupt (better accuracy)
-    init(dataPin, INTERRUPT_MODE);
+    // Set the default mode to use pulse mode since interrupt mode isn't working right now
+    init(dataPin, PULSE_MODE);
 }
 
 TSL235R::TSL235R(unsigned char dataPin, char mode) {
@@ -55,7 +55,6 @@ unsigned long TSL235R::read() {
             break;
         }
         case INTERRUPT_MODE: {
-            Serial.println(interruptDuration);
             // Convert the result to frequency, here we are actually calculating a full cycle but the sample rate
             returnValue = (unsigned long) (1000000 / interruptDuration);
             break;
