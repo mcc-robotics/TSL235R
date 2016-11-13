@@ -34,7 +34,7 @@ public:
      * between 0 and 1000.
      * @return char the intensity value between 0 and 100
      */
-    char readCalibrated();
+    long readCalibrated();
 
     /**
      * calibrateOnce
@@ -44,12 +44,16 @@ public:
      */
     void calibrateOnce();
 
+    unsigned long getCalibratedMin() { return min; }
+    unsigned long getCalibratedMax() { return max; }
+
 private:
     void init(unsigned char dataPin, char mode);
 
     char mode;
     unsigned char dataPin;
     volatile unsigned long counter;
+    volatile unsigned long lastCounter;
     unsigned long max;
     unsigned long min;
     unsigned long range;
